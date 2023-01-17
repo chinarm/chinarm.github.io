@@ -1,18 +1,63 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-    {% include head-custom.html %}
-  </head>
-  <body>
-  We will come to this later. 
-  </body>
+		{%- seo title=false -%}
+		<title>
+			{{ site.title }} {% if page.title %} | {{ page.title }} {% endif %}
+		</title>
+		
+		<link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+		
+		{% if page.style %}
+			<link rel="stylesheet" href="{{ page.style }}">
+		{% endif %}
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<![endif]-->
+		{% include head-custom.html %}
+	</head>
+	
+	<body>
+			<div class="header">
+				<h1 class="name titles"><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+				<!--<h2 class="titles menu-item menu-item-about"><a href="/about">About</a>-->
+				<h2 class="titles menu-item menu-item-media"><a href="/cv">CV</a>
+			</div>
+			
+			<div class="content-wrapper">
+				{% if page.html %}
+					{% include {{ page.html }} %}
+				{% endif %}
+			</div>
+			
+			<div class="footer">
+				{% if page.title %}
+				<div class="social-media">
+					<div class="linkedin-icon sm-icon">
+						<a href="#" class="fa fa-linkedin"></a>
+					</div>
+					<div class="twitter-icon sm-icon">
+						<a href="#" class="fa fa-twitter"></a>
+					</div>
+					<div class="facebook-icon sm-icon">
+						<a href="#" class="fa fa-facebook"></a>
+					</div>
+					<div class="instagram-icon sm-icon">
+						<a href="#" class="fa fa-instagram"></a>
+					</div>
+				</div>
+				{%endif%}
+				<div class="credit-wrapper">
+					<p><small>Hosted on GitHub Pages &mdash; Theme by <a class="credit" href="https://github.com/orderedlist">orderedlist</a></small></p>
+					<p><small>Icons made by <a class="credit" href="https://www.flaticon.com/authors/freepik" title="Freepik"> Freepik </a> from <a class="credit" href="https://www.flaticon.com/" title="Flaticon">Flaticon</a></small></p>
+				</div>
+			</div>
+		<script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+	</body>
 </html>

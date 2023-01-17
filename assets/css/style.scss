@@ -5,6 +5,10 @@
 
 $cute-pink: #FF2ECC;
 $pastel-yellow: #F4F1BB;
+$linkedin: #007bb5;
+$facebook: #3B5998;
+$twitter: #55ACEE;
+$instagram: #d62976;
 
 @font-face {
 	font-family: 'Oswald-Regular';
@@ -21,11 +25,8 @@ $pastel-yellow: #F4F1BB;
 	src: url('/assets/fonts/Barlow-Regular.ttf') format('truetype');
 }
 
-.wrapper {
-	padding: 2rem;
-	margin: 0 auto;
-	width: 80%;
-	overflow: auto;
+body {
+	margin: 0 10rem 0 10rem;
 }
 
 .header {
@@ -37,6 +38,15 @@ $pastel-yellow: #F4F1BB;
 	letter-spacing: 0.20rem;
 	text-transform: uppercase;
 	color: black;
+	a {
+		padding: 0 0.5rem 0 0.5rem;
+		color: inherit;
+	}
+	a:hover {
+		background: $pastel-yellow;
+		color: $cute-pink;
+		cursor: pointer;
+	}
 }
 
 .name {
@@ -57,41 +67,87 @@ h2 {
 	font-size: 1.5rem;
 }
 
-a {
-	padding: 0 0.5rem 0 0.5rem;
-	color: inherit;
-}
-
-a:hover {
-	background: $pastel-yellow;
-	color: $cute-pink;
-	cursor: pointer;
-}
-
 p {
 	font-family: 'Barlow-Regular';
 	font-size: 1rem;
 }
 
-.description-wrapper {
+.content-wrapper {
+	margin: 0 0 20rem 0;
+}
+
+.footer p {
+	margin: 0;
+}
+
+.social-media {
+	margin-bottom: 1rem;
+	a:hover {
+		font-weight: normal;
+	}
+}
+
+.sm-icon {
 	float: left;
+	font-size: 20px;
+	padding: 1rem;
+	width: 2rem;
+	margin: 0 1rem 1rem 0;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+	border-width: 3px;
+	border-color: black;
+	border-style: solid;
+	color: white; 
+	cursor: pointer;
+	&:hover {
+		border-color: $cute-pink;
+		background: $pastel-yellow;
+		a {
+			color: $cute-pink;
+		}
+	}
 }
 
-.logo-wrapper {
-	padding: 1em;
-	width: 30%;
-	height: auto;
+
+.fa {
+	color: black; 
 }
 
-.column {
-	float: left;
+/*
+.linkedin-icon {
+	background: $linkedin;
+	color: white;
 }
 
-.description {
-	width: 60%;
-	padding: 2rem 0 0 1rem;
+.instagram-icon {
+	background: $instagram;
+	color: white;
 }
 
-.flaticon-credit {
-	font-size: 0.2rem;
+.facebook-icon {
+	background: $facebook;
+	color: white;
 }
+
+.twitter-icon {
+	background: $twitter;
+	color: white;
+}
+*/
+
+.credit-wrapper {
+	clear: both;
+}
+
+.footer .credit {
+	padding: 0;
+}
+
+.footer .credit {
+	background: white;
+	color: blue;
+	font-weight: normal;
+}
+

@@ -21,13 +21,13 @@ logo: /assets/icons/pinknerd.png
 title: Chinar Mehta
 email: chinar.dac@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-    Hi, I am Chinar. I am a Fulbright Fellow at Carnegie Mellon University and a Ph.D. scholar at the Department of Communication at the University of Hyderabad. I am interested in interdisciplinary research about technology, cultures, and histories. With previous work experience as a front-end developer, as a media researcher, I am largely interested in the web as a communication channel.    
+    Hi, I am Chinar. I am a Fulbright Fellow at Carnegie Mellon University and a Ph.D. scholar at the Department of Communication at the University of Hyderabad. I am interested in interdisciplinary research about technology - its cultures, and histories. With previous work experience as a front-end developer, as a media researcher, I am largely interested in the web as a communication channel.    
 description1: 
     My doctoral research is about how knowledge-in-practice is inscribed on web interfaces - for which I draw theory from Science & Technology Studies, Feminist Cultural Studies of Science, and New Media Studies. In other words, I follow web developers & managers around and ask them to explain what they do (and how they do it) in great detail.
 description2:
     I was also part of FemLab.co, a research project that aims to understand the communicative practices of women workers in India and Bangladesh so that digital tools can be leveraged for their collectivization. 
 description3:
-    I channel my energies into creative ways to get research to a broader audience - through media productions like documentary films, podcasts, radio, and others.
+    I channel my energies into creative ways to get research to a broader audience - through media productions like documentary films, podcasts, radio, and others. You can reach me at chinar [dot] dac [at] gmail [dot] com.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
