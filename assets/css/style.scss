@@ -3,6 +3,95 @@
 
 @import "{{ site.theme }}";
 
-body {
-	background-color: white;
+$cute-pink: #FF2ECC;
+$pastel-yellow: #F4F1BB;
+
+@font-face {
+	font-family: 'Oswald-Regular';
+	src: url('/assets/fonts/Oswald-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Oswald-Light';
+	src: url('/assets/fonts/Oswald-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Barlow-Regular';
+	src: url('/assets/fonts/Barlow-Regular.ttf') format('truetype');
+}
+
+.wrapper {
+	padding: 2rem;
+	margin: 0 auto;
+	width: 80%;
+	overflow: auto;
+}
+
+.header {
+	padding: 1rem 1rem 5rem 1rem;
+}
+
+.titles {
+	font-family: 'Oswald-Regular';
+	letter-spacing: 0.20rem;
+	text-transform: uppercase;
+	color: black;
+}
+
+.name {
+	float: left;
+}
+
+.menu-item {
+	font-family: 'Oswald-Light';
+	float: right;
+	padding: 0 0.5rem 0 0.5rem;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+a {
+	padding: 0 0.5rem 0 0.5rem;
+	color: inherit;
+}
+
+a:hover {
+	background: $pastel-yellow;
+	color: $cute-pink;
+	cursor: pointer;
+}
+
+p {
+	font-family: 'Barlow-Regular';
+	font-size: 1.5rem;
+}
+
+.description-wrapper {
+	float: left;
+}
+
+.logo-wrapper {
+	padding: 1em;
+	width: 30%;
+	height: auto;
+}
+
+.column {
+	float: left;
+}
+
+.description {
+	width: 60%;
+	padding: 2rem 0 0 1rem;
+}
+
+.flaticon-credit {
+	font-size: 0.2rem;
 }
