@@ -50,6 +50,23 @@ body {
   }
 }
 
+@media screen and (max-width: 600px) {
+  body {
+	margin: 0 1rem 0 1rem;
+	padding: 2rem !important;
+  }
+  
+  .menu-item {
+	float: left !important;
+	padding: 0 !important;
+  }
+  
+  .sm-icon {
+	padding: 0.5rem !important;
+	border-width: 2px !important;
+  }
+}
+
 .header {
 	padding: 1rem 1rem 5rem 1rem;
 }
