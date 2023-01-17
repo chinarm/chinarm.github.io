@@ -29,6 +29,27 @@ body {
 	margin: 0 10rem 0 10rem;
 }
 
+@media screen and (max-width: 1200px) {
+  body {
+	margin: 0 3rem 0 3rem;
+	padding: 5rem !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+	margin: 0 3rem 0 3rem;
+	padding: 5rem !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+	margin: 0 1rem 0 1rem;
+	padding: 2rem !important;
+  }
+}
+
 .header {
 	padding: 1rem 1rem 5rem 1rem;
 }
