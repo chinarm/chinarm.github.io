@@ -64,30 +64,24 @@ body {
 		padding: 0.5rem;
 		border-width: 2px;
 	}
-  
-	p {
-		padding: 0;
-	}
   }
 }
 
+.menu {
+	display: inherit;
+	float: right;
+}
+
 .header {
-	padding: 1rem 1rem 5rem 1rem;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 2rem;
 }
 
 .titles {
-	font-family: 'Oswald-Regular';
-	letter-spacing: 0.20rem;
-	text-transform: uppercase;
-	color: black;
 	a {
 		padding: 0 0.5rem 0 0.5rem;
 		color: inherit;
-	}
-	a:hover {
-		background: $pastel-yellow;
-		color: $cute-pink;
-		cursor: pointer;
 	}
 }
 
@@ -98,7 +92,14 @@ body {
 .menu-item {
 	font-family: 'Oswald-Light';
 	float: right;
-	padding: 0 0.5rem 0 0.5rem;
+	padding: 0.25rem 0.5rem 0 0.5rem;
+}
+
+h1, h2, h3 {
+	font-family: 'Oswald-Regular';
+	letter-spacing: 0.20rem;
+	text-transform: uppercase;
+	color: black;
 }
 
 h1 {
@@ -109,25 +110,35 @@ h2 {
 	font-size: 1.5rem;
 }
 
+h3 {
+	font-size: 1.2rem;
+}
+
 p {
 	font-family: 'Barlow-Regular';
 	font-size: 1rem;
-	padding: 0 0 0 2rem;
-	
-	a:hover {
-		background: $pastel-yellow;
-		color: $cute-pink;
-		cursor: pointer;
-		font-weight: normal;
-	}
+}
+
+a:hover {
+	background: $pastel-yellow;
+	color: $cute-pink;
+	cursor: pointer;
+	font-weight: inherit;
 }
 
 .content-wrapper {
 	margin: 0 0 20rem 0;
 }
 
-.footer p {
-	margin: 0;
+.footer {
+	.sm-icon {
+		padding: 0.5rem;
+	}
+	
+	p {
+		margin: 0;
+		padding: 0;
+	}
 }
 
 .social-media {
