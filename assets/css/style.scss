@@ -108,6 +108,14 @@ h2 {
 p {
 	font-family: 'Barlow-Regular';
 	font-size: 1rem;
+	padding: 0 0 0 2rem;
+	
+	a:hover {
+		background: $pastel-yellow;
+		color: $cute-pink;
+		cursor: pointer;
+		font-weight: normal;
+	}
 }
 
 .content-wrapper {
