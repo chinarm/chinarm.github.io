@@ -53,17 +53,21 @@ body {
 @media screen and (max-width: 600px) {
   body {
 	margin: 0 1rem 0 1rem;
-	padding: 2rem !important;
-  }
+	padding: 2rem;
+	
+	.menu-item {
+		float: left;
+		padding: 0;
+	}
   
-  .menu-item {
-	float: left !important;
-	padding: 0 !important;
-  }
+	.sm-icon {
+		padding: 0.5rem;
+		border-width: 2px;
+	}
   
-  .sm-icon {
-	padding: 0.5rem !important;
-	border-width: 2px !important;
+	p {
+		padding: 0;
+	}
   }
 }
 
