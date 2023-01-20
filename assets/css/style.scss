@@ -3,8 +3,13 @@
 
 @import "{{ site.theme }}";
 
-$cute-pink: #FF2ECC;
-$pastel-yellow: #F4F1BB;
+$hover-font: #F05365;
+$hover-background: #420022;
+$grey-background: #610032;
+$title-font-color: #DE3C4B;
+$font-color: #F194B4;
+$link-color: #6590C9;
+
 $linkedin: #007bb5;
 $facebook: #3B5998;
 $twitter: #55ACEE;
@@ -27,6 +32,7 @@ $instagram: #d62976;
 
 body {
 	margin: 0 15rem 0 15rem;
+	background: $grey-background !important;
 }
 
 @media screen and (max-width: 1200px) {
@@ -99,7 +105,7 @@ h1, h2, h3 {
 	font-family: 'Oswald-Regular';
 	letter-spacing: 0.20rem;
 	text-transform: uppercase;
-	color: black;
+	color: $title-font-color;
 }
 
 h1 {
@@ -117,13 +123,17 @@ h3 {
 p {
 	font-family: 'Barlow-Regular';
 	font-size: 1rem;
+	color: $font-color; 
 }
 
-a:hover {
-	background: $pastel-yellow;
-	color: $cute-pink;
-	cursor: pointer;
-	font-weight: inherit;
+a {
+	color: $link-color;
+	&:hover {
+		background: $hover-background;
+		color: $hover-font;
+		cursor: pointer;
+		font-weight: inherit;
+	}
 }
 
 .content-wrapper {
@@ -158,43 +168,43 @@ a:hover {
 	text-decoration: none;
 	border-radius: 50%;
 	border-width: 3px;
-	border-color: black;
+	border-color: $font-color;
 	border-style: solid;
-	color: white; 
+	color: $font-color; 
 	cursor: pointer;
 	&:hover {
-		border-color: $cute-pink;
-		background: $pastel-yellow;
+		border-color: $hover-font;
+		background: $hover-background;
 		a {
-			color: $cute-pink;
+			color: $hover-font;
 		}
 	}
 }
 
 
 .fa {
-	color: black; 
+	color: $font-color; 
 }
 
 /*
 .linkedin-icon {
 	background: $linkedin;
-	color: white;
+	color: $grey-background;
 }
 
 .instagram-icon {
 	background: $instagram;
-	color: white;
+	color: $grey-background;
 }
 
 .facebook-icon {
 	background: $facebook;
-	color: white;
+	color: $grey-background;
 }
 
 .twitter-icon {
 	background: $twitter;
-	color: white;
+	color: $grey-background;
 }
 */
 
@@ -207,7 +217,7 @@ a:hover {
 }
 
 .footer .credit {
-	background: white;
+	background: $grey-background;
 	color: blue;
 	font-weight: normal;
 }
