@@ -13,13 +13,6 @@
 	display: table;
 }
 
-.social-media {
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	margin-top: 2rem;
-}
-
 @media screen and (max-width: 600px) {
 	.logo-wrapper {
 		width: auto;
