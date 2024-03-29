@@ -19,17 +19,29 @@
 # in the templates via {{ site.myvariable }}.
 logo: /assets/icons/ChinarClose.jpg
 title: Chinar Mehta
+tagline: Chinar's website
 email: chinar.dac@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: Chinar Mehta, PhD candidate at University of Hyderabad, Fulbright Fellow Carnegie Mellon University, Tata Institute of Social Sciences, Usha Raman, Shilpa Phadke>- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
+url: "https://chinarm.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+author: Chinar Mehta
+twitter:
+    username: _chinar_
+social: 
+    name: Chinar Mehta
+    links:
+        - https://www.linkedin.com/in/chinar-mehta/
+        - https://twitter.com/_chinar_
+        - https://www.facebook.com/chinar.mehta/
+        - https://www.instagram.com/china.mina.dika/
+        - https://uohyd.academia.edu/ChinarMehta
 
 # Build settings
 remote_theme: pages-themes/minimal
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -35,3 +35,4 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 gem "webrick"
 
 gem "jekyll-remote-theme", "~> 0.4.3"
+gem "jekyll-seo-tag"
