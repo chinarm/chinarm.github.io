@@ -131,6 +131,10 @@ h3 {
 	display: inline;
 }
 
+h4 {
+	
+}
+
 p {
 	font-family: 'Barlow-Regular';
 	font-size: 1rem;
@@ -192,6 +196,8 @@ a {
 
 .desc-title {
 	margin-bottom: 1rem;
+	margin-top: 1.5rem;
+	display: flex;
 	
 	.desc-icon {
 		color: $link-color; 
