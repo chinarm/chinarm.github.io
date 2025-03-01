@@ -52,6 +52,14 @@ body {
   body {
 	margin: 0 1rem 0 1rem;
 	padding: 2rem !important;
+	
+	.homepage {
+		display: block !important;
+		
+		.photo-wrapper {
+			width: 80% !important;
+		}
+	}
   }
 }
 
@@ -151,20 +159,6 @@ a {
 	}
 }
 
-.social-media {
-	text-align: center;
-
-	.fa {
-		width: 1.2rem;
-	}
-	
-	.academia-profile {
-		border-radius: 2rem;
-			font-size: inherit;
-			display: inline-block;
-	}
-}
-
 .round-icon {
 	color: $font-color; 
 	border: solid 2px $font-color;
@@ -179,32 +173,60 @@ a {
 	}
 }
 
-.photo-wrapper {
-	width: 30%;
-	float: left;
-	margin: 0 2rem 0 0;
+.homepage {
+	display:flex;
+	justify-content: center;
 
-	.photo {
-		float: left;
-		margin: 0 2rem 2rem 0;
-	}
-}
+	.photo-wrapper {
+		display: grid;
+		width: 30%;
+		margin: 0 2rem 0 0;
 
-.content-wrapper {
-	margin: 0 0 20rem 0;
-}
-
-.desc-title {
-	margin-bottom: 1rem;
-	margin-top: 1.5rem;
-	display: flex;
+		.photo {
+			float: left;
+			margin: 0 2rem 2rem 0;
+		}
 	
-	.desc-icon {
-		color: $link-color; 
-		font-size: 1.2rem;
-		text-align: center;
-		margin-right: 1rem;
-		cursor: auto;
+		.social-media {
+			margin: auto;
+	
+			.fa {
+				width: 1.2rem;
+			}
+	
+			.academia-profile {
+				border-radius: 2rem;
+				font-size: inherit;
+				display: inline-block;
+			}
+		}
+	}
+	
+	.description-wrapper {
+		width: 17rem;
+		.description {
+			p {
+				font-size: 1rem;
+			}
+		}
+	}
+
+	.content-wrapper {
+		margin: 0 0 10rem 0;
+	}
+
+	.desc-title {
+		margin-bottom: 1rem;
+		margin-top: 1.5rem;
+		display: flex;
+	
+		.desc-icon {
+			color: $link-color; 
+			font-size: 1.2rem;
+			text-align: center;
+			margin-right: 1rem;
+			cursor: auto;
+		}
 	}
 }
 
