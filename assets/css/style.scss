@@ -54,10 +54,21 @@ body {
 	padding: 2rem !important;
 	
 	.homepage {
-		display: block !important;
+		.introduction-wrapper {
+			display: block !important;
 		
-		.photo-wrapper {
-			width: 80% !important;
+			.photo-wrapper {
+				width: 80%;
+			}
+		}
+		
+		.projects-wrapper {
+			display: grid;
+			grid-template-columns: repeat(1, minmax(200px, 1fr)) !important;
+			
+			.project {
+				margin: 1rem 2rem 1rem 2rem !important;
+			}
 		}
 	}
   }
@@ -68,9 +79,13 @@ body {
 	margin: 0 1rem 0 1rem;
 	padding: 2rem;
 	
-	.menu-item {
+	.menu .menu-item {
 		float: left;
 		padding: 0;
+	}
+	
+	.homepage .photo-wrapper {
+		width: 100%;
 	}
 	
 	.social-media {
@@ -137,6 +152,7 @@ h2 {
 h3 {
 	font-size: 1rem;
 	display: inline;
+	color: $title-font-color
 }
 
 h4 {
@@ -161,7 +177,7 @@ a {
 
 .round-icon {
 	color: $font-color; 
-	border: solid 2px $font-color;
+	border: solid 1px $font-color;
 	border-radius: 50%;
 	font-size: 1.2rem;
 	text-align: center;
@@ -174,9 +190,11 @@ a {
 }
 
 .homepage {
-	display:flex;
-	justify-content: center;
-
+	.introduction-wrapper {
+		display:flex;
+		justify-content: center;
+	}
+	
 	.photo-wrapper {
 		display: grid;
 		width: 30%;
@@ -226,6 +244,46 @@ a {
 			text-align: center;
 			margin-right: 1rem;
 			cursor: auto;
+		}
+	}
+
+	.research-title {
+		text-align: center;
+		margin-top: 2rem;
+	}
+	
+	.projects-wrapper {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(200px, 1fr));	
+		grid-gap: 1rem;	
+		justify-content: center;
+		
+		a {
+			font-weight: normal;
+			&:hover {
+				background-color: $grey-background;
+				color: $font-color;
+				font-weight: normal;
+			}
+		}
+		
+		.project {
+			margin: 1rem;
+			padding: 1.5rem;
+			border: 1px solid $font-color;
+			cursor: pointer;
+			
+			p {
+				padding-top: 1rem;
+			}
+			
+			&:hover {
+				background-color: $hover-background;
+				
+				h3 {
+					color: $hover-font;
+				}
+			}
 		}
 	}
 }
