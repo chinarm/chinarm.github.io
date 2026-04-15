@@ -177,11 +177,10 @@ a {
 	}
 }
 
-.round-icon {
+.ss-icon {
 	color: $font-color; 
 	border: solid 1px $font-color;
-	border-radius: 50%;
-	font-size: 1.2rem;
+	font-size: 0.9rem;
 	text-align: center;
 	padding: 1rem;
 	margin: 0.5rem;
@@ -215,7 +214,6 @@ a {
 			}
 	
 			.academia-profile {
-				border-radius: 2rem;
 				font-size: inherit;
 				display: inline-block;
 			}
