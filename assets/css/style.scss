@@ -87,7 +87,11 @@ body {
 	.homepage .photo-wrapper {
 		width: 100%;
 	}
-	
+
+	.course-page .lecture-content {
+		padding: 0.8rem 1rem;
+	}
+
 	.social-media {
 		a {
 			padding: 0.5rem;
@@ -251,8 +255,9 @@ a {
 		text-align: center;
 		margin-top: 2rem;
 	}
-	
-	.projects-wrapper {
+}
+
+.box-wrapper {
 		display: grid;
 		grid-template-columns: repeat(3, minmax(200px, 1fr));	
 		grid-gap: 1rem;	
@@ -267,7 +272,7 @@ a {
 			}
 		}
 		
-		.project {
+		.box-styled {
 			margin: 1rem;
 			padding: 1.5rem;
 			border: 1px solid $font-color;
@@ -286,9 +291,104 @@ a {
 			}
 		}
 	}
+
+// ── Course pages (reusable for all course pages) ──────────────────────────
+.course-page {
+	.course-meta {
+		font-size: 0.85rem;
+		color: #777;
+		margin-bottom: 0.4rem;
+		letter-spacing: 0.03rem;
+	}
+
+	.course-description {
+		font-style: italic;
+		margin-bottom: 1.2rem;
+	}
+
+	.course-info {
+		margin-bottom: 2rem;
+		padding-bottom: 1.5rem;
+		border-bottom: 1px solid #e0e0e0;
+		font-size: 0.9rem;
+		color: #444;
+	}
+
+	.lectures-title {
+		margin-bottom: 1rem;
+	}
+
+	details {
+		border: 1px solid $font-color;
+		margin-bottom: 0.6rem;
+
+		summary {
+			padding: 0.85rem 1.2rem;
+			cursor: pointer;
+			font-weight: 600;
+			color: $font-color;
+			list-style: none;
+			user-select: none;
+
+			&::-webkit-details-marker { display: none; }
+			&::marker { display: none; }
+
+			&::before {
+				content: '▶';
+				font-size: 0.65rem;
+				vertical-align: middle;
+				margin-right: 0.6rem;
+				display: inline-block;
+			}
+
+			&:hover { background-color: #f4f8fc; }
+		}
+
+		&[open] {
+			background-color: $grey-background;
+
+			summary {
+				border-bottom: 1px solid #e8e8e8;
+				&::before { content: '▼'; }
+			}
+		}
+	}
+
+	.lecture-content {
+		padding: 1rem 1.5rem 1.2rem 1.5rem;
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+
+			li {
+				padding: 0.25rem 0;
+				font-size: 0.88rem;
+				line-height: 1.6;
+				color: #333;
+			}
+		}
+
+		.reading-divider {
+			border: none;
+			border-top: 1px solid #ddd;
+			margin: 0.8rem 0;
+		}
+
+		a {
+			color: $font-color;
+			&:hover { color: $hover-font; }
+		}
+
+		.video-tag {
+			font-size: 0.75rem;
+			color: #999;
+			font-style: italic;
+			margin-left: 0.2rem;
+		}
+	}
 }
-
-
 
 /*
 .linkedin-icon {
