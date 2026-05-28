@@ -55,23 +55,43 @@ body {
   body {
 	margin: 0 1rem 0 1rem;
 	padding: 2rem !important;
-	
+
 	.homepage {
 		.introduction-wrapper {
 			display: block !important;
-		
+
 			.photo-wrapper {
 				width: 80%;
 			}
 		}
-		
+
 		.projects-wrapper {
 			display: grid;
 			grid-template-columns: repeat(1, minmax(200px, 1fr)) !important;
-			
+
 			.project {
 				margin: 1rem 2rem 1rem 2rem !important;
 			}
+		}
+
+		.box-wrapper {
+			grid-template-columns: repeat(1, minmax(200px, 1fr)) !important;
+
+			.box-styled {
+				margin: 0.5rem 1rem !important;
+			}
+		}
+	}
+
+	.homepage .description-wrapper {
+		width: 80% !important;
+	}
+
+	.teaching .box-wrapper {
+		grid-template-columns: repeat(1, minmax(200px, 1fr)) !important;
+
+		.box-styled {
+			margin: 0.5rem 1rem !important;
 		}
 	}
   }
@@ -81,12 +101,12 @@ body {
   body {
 	margin: 0 1rem 0 1rem;
 	padding: 2rem;
-	
+
 	.menu .menu-item {
 		float: left;
 		padding: 0;
 	}
-	
+
 	.homepage .photo-wrapper {
 		width: 100%;
 	}
@@ -234,7 +254,7 @@ a {
 	}
 	
 	.description-wrapper {
-		width: 17rem;
+		width: 55%;
 		.description {
 			p {
 				font-size: 1rem;
