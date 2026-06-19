@@ -11,7 +11,9 @@ $font-color: #26547C;
 $link-color: #06D6A0;
 
 $light-grey: #e8e8e8;
+$log-chip-background: #deeaf5;
 $medium-grey: #a6a6a6;
+$dark-grey: #333;
 
 $linkedin: #007bb5;
 $facebook: #3B5998;
@@ -413,6 +415,65 @@ a {
 		}
 	}
 
+	details.no-expand {
+		summary {
+			cursor: default;
+			&::before { display: none; }
+			&:hover { background-color: transparent; }
+		}
+	}
+
+	.submission-weight {
+		font-size: 0.75rem;
+		font-weight: 400;
+		color: $medium-grey;
+		margin-left: 0.3rem;
+		vertical-align: middle;
+	}
+
+	.session-entry {
+		margin-bottom: 1.2rem;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid $light-grey;
+
+		&:last-child {
+			border-bottom: none;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+
+		.session-title {
+			font-family: 'Barlow-Regular';
+			font-weight: 700;
+			font-size: 0.88rem;
+			color: $font-color;
+			margin-bottom: 0.5rem;
+			display: block;
+		}
+	}
+
+	.submission-type {
+		display: inline-block;
+		font-size: 0.68rem;
+		font-weight: 700;
+		letter-spacing: 0.06rem;
+		text-transform: uppercase;
+		padding: 0.15rem 0.5rem;
+		border-radius: 3px;
+		margin-right: 0.5rem;
+		vertical-align: middle;
+	}
+
+	.type-exercise {
+		background: $hover-background;
+		color: $hover-font;
+	}
+
+	.type-log {
+		background: $log-chip-background;
+		color: $font-color;
+	}
+
 	.lecture-content {
 		padding: 1rem 1.5rem 1.2rem 1.5rem;
 
@@ -425,13 +486,13 @@ a {
 				padding: 0.25rem 0;
 				font-size: 0.88rem;
 				line-height: 1.6;
-				color: #333;
+				color: $dark-grey;
 			}
 		}
 
 		.reading-divider {
 			border: none;
-			border-top: 1px solid #ddd;
+			border-top: 1px solid $light-grey;
 			margin: 0.8rem 0;
 		}
 
@@ -442,7 +503,7 @@ a {
 
 		.video-tag {
 			font-size: 0.75rem;
-			color: #999;
+			color: $medium-grey;
 			font-style: italic;
 			margin-left: 0.2rem;
 		}
